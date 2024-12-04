@@ -9,6 +9,9 @@
 
   <ItemGroup>
     <None Update="input\input1.txt" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="input\input2.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 </Project>
