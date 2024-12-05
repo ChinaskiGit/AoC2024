@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text.RegularExpressions;
 
-namespace Aoc2024.Dia3;
+namespace Aoc2024.Problemas;
 public static class ProblemaDia3
 {
     public static void ResolverParte1(string data)
@@ -19,7 +19,6 @@ public static class ProblemaDia3
         }
 
         Debug.WriteLine(totalSum);
-        Console.WriteLine(totalSum);
     }
 
     public static void ResolverParte2(string data)
@@ -48,6 +47,6 @@ public static class ProblemaDia3
             }
         }
         Debug.WriteLine(totalSum);
-        Console.WriteLine(totalSum);
     }
+
 }

@@ -1,4 +1,6 @@
-﻿namespace Aoc2024.Dia1;
+﻿using System.Diagnostics;
+
+namespace Aoc2024.Problemas;
 
 public static class ProblemaDia1
 {
@@ -21,7 +23,7 @@ public static class ProblemaDia1
         endNumbers.Sort();
         int totalDistance = startNumbers.Zip(endNumbers, (start, end) => Math.Abs(start - end)).Sum();
 
-        Console.WriteLine(totalDistance);
+        Debug.WriteLine(totalDistance);
     }
     public static void ResolverParte2(string input)
     {
@@ -40,6 +42,6 @@ public static class ProblemaDia1
         }
         var endNumberCounts = endNumbers.GroupBy(x => x).ToDictionary(group => group.Key, group => group.Count());
         int totalSum = startNumbers.Sum(start => start * (endNumberCounts.TryGetValue(start, out int value) ? value : 0));
-        Console.WriteLine(totalSum);
+        Debug.WriteLine(totalSum);
     }
 }

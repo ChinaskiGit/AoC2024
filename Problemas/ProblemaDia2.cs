@@ -1,6 +1,6 @@
 ﻿using System.Diagnostics;
 
-namespace Aoc2024.Dia2;
+namespace Aoc2024.Problemas;
 public static class ProblemaDia2
 {
     public static void ResolverParte1(string data)
@@ -17,7 +17,6 @@ public static class ProblemaDia2
             }
         }
         Debug.WriteLine(safeReports);
-        Console.WriteLine(safeReports);
     }
 
     public static void ResolverParte2(string data)
@@ -34,7 +33,6 @@ public static class ProblemaDia2
             }
         }
         Debug.WriteLine(safeReports);
-        Console.WriteLine(safeReports);
     }
 
     private static bool IsSafeReport(string[] levels)
@@ -53,7 +51,6 @@ public static class ProblemaDia2
                 return true;
             }
         }
-
         return false;
     }
 
@@ -78,6 +75,7 @@ public static class ProblemaDia2
                 isDecreasing = false;
             }
         }
-        return (isIncreasing || isDecreasing);
+        return isIncreasing || isDecreasing;
     }
+
 }
