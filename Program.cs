@@ -1,3 +1,3 @@
 ﻿using Aoc2024.Problemas;
 
-ProblemaDia4.ResolverParte2("input/input4.txt");
+ProblemaDia5.ResolverParte1("input/input5.txt");
